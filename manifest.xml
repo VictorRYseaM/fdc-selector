@@ -11,12 +11,12 @@
   <DisplayName DefaultValue="FDC Selector" />
   <Description DefaultValue="Sincroniza filas fuente al consolidado del Flujo de Caja (añadir, eliminar, reparar vinculos)." />
   <AppDomains>
-    <AppDomain>https://localhost:3000</AppDomain>
-    <AppDomain>https://TU-USUARIO.github.io</AppDomain>
+    <AppDomain>https://victorryseam.github.io/fdc-selector</AppDomain>
+    <AppDomain>https://victorryseam.github.io</AppDomain>
   </AppDomains>
   <Hosts><Host Name="Workbook" /></Hosts>
   <DefaultSettings>
-    <SourceLocation DefaultValue="https://localhost:3000/taskpane.html" />
+    <SourceLocation DefaultValue="https://victorryseam.github.io/fdc-selector/taskpane.html" />
   </DefaultSettings>
   <Permissions>ReadWriteDocument</Permissions>
   <VersionOverrides xmlns="http://schemas.microsoft.com/office/taskpaneappversionoverrides" xsi:type="VersionOverridesV1_0">
@@ -47,13 +47,13 @@
     </Hosts>
     <Resources>
       <bt:Images>
-        <bt:Image id="Icon.16" DefaultValue="https://localhost:3000/icon-16.png" />
-        <bt:Image id="Icon.32" DefaultValue="https://localhost:3000/icon-32.png" />
-        <bt:Image id="Icon.80" DefaultValue="https://localhost:3000/icon-80.png" />
+        <bt:Image id="Icon.16" DefaultValue="https://victorryseam.github.io/fdc-selector/icon-16.png" />
+        <bt:Image id="Icon.32" DefaultValue="https://victorryseam.github.io/fdc-selector/icon-32.png" />
+        <bt:Image id="Icon.80" DefaultValue="https://victorryseam.github.io/fdc-selector/icon-80.png" />
       </bt:Images>
       <bt:Urls>
-        <bt:Url id="Commands.Url" DefaultValue="https://localhost:3000/taskpane.html" />
-        <bt:Url id="Taskpane.Url" DefaultValue="https://localhost:3000/taskpane.html" />
+        <bt:Url id="Commands.Url" DefaultValue="https://victorryseam.github.io/fdc-selector/taskpane.html" />
+        <bt:Url id="Taskpane.Url" DefaultValue="https://victorryseam.github.io/fdc-selector/taskpane.html" />
         <bt:Url id="GetStarted.LearnUrl" DefaultValue="https://go.microsoft.com/fwlink/?LinkId=276834" />
       </bt:Urls>
       <bt:ShortStrings>
