@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FDC Selector</title>
+  <link rel="stylesheet" href="taskpane.css" />
+  <script src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js"></script>
+</head>
+<body>
+  <h2>Sincronizar FDC</h2>
+  <div id="mode-row">
+    <label><input type="radio" name="mode" value="add" checked /> Añadir</label>
+    <label><input type="radio" name="mode" value="del" /> Eliminar</label>
+    <label id="del-scope" style="display:none"><input type="checkbox" id="del-source" /> también en hoja fuente</label>
+  </div>
+  <div id="filters">
+    <input id="q" type="text" placeholder="Filtrar texto..." />
+    <select id="f-sheet"><option value="">Todas las hojas</option></select>
+    <select id="f-sec"><option value="">Todas las secciones</option></select>
+    <div id="sel-btns">
+      <button id="b-all">Todo</button>
+      <button id="b-none">Nada</button>
+      <button id="b-missing">Solo faltantes</button>
+    </div>
+  </div>
+  <div id="list"></div>
+  <div id="actions">
+    <button id="b-apply">Aplicar</button>
+    <button id="b-refresh">Actualizar</button>
+    <button id="b-repair">Reparar vínculos</button>
+  </div>
+  <div id="orphans"></div>
+  <div id="status"></div>
+  <script src="taskpane.js"></script>
+</body>
+</html>

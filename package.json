@@ -1,0 +1,19 @@
+{
+  "name": "fdc-selector",
+  "version": "0.1.0",
+  "description": "Complemento Excel: sincroniza filas fuente al consolidado del Flujo de Caja Maritime",
+  "scripts": {
+    "build": "esbuild src/taskpane.ts --bundle --minify --outfile=dist/taskpane.js",
+    "watch": "esbuild src/taskpane.ts --bundle --outfile=dist/taskpane.js --watch",
+    "certs": "office-addin-dev-certs install",
+    "dev-server": "http-server dist -p 3000 --ssl --cert %USERPROFILE%/.office-addin-dev-certs/localhost.crt --key %USERPROFILE%/.office-addin-dev-certs/localhost.key",
+    "test": "node tests/run.mjs"
+  },
+  "devDependencies": {
+    "@types/office-js": "^1.0.0",
+    "esbuild": "^0.21.0",
+    "http-server": "^14.1.1",
+    "office-addin-dev-certs": "^1.0.0",
+    "typescript": "^5.4.0"
+  }
+}
