@@ -20,7 +20,7 @@ jobs:
           cache: pnpm
       - run: pnpm install --frozen-lockfile
       - run: pnpm run build
-      - run: cp src/taskpane.html src/taskpane.css dist/ && pnpm test
+      - run: cp src/taskpane.html src/taskpane.css src/icon-*.png dist/ && pnpm test
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist
